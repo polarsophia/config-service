@@ -21,3 +21,13 @@ server:
       max: 100
       min-spare: 5
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9000
